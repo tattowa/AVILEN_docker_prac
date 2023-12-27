@@ -7,7 +7,7 @@ server = WEBrick::HTTPServer.new(
     Porrt: 8000
 )
 
-sever.mount_proc('/') do |req, res|
+server.mount_proc('/') do |req, res|
     res.nody = 'hello'
 end
 
